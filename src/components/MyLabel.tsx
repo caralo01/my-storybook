@@ -22,6 +22,10 @@ interface IMyLabel {
    * Color de la letra
    */
   fontColor?: string;
+  /**
+   * What background color to use
+   */
+  backgroundColor?: string;
 }
 
 export const MyLabel = ({
@@ -30,10 +34,14 @@ export const MyLabel = ({
   type,
   allCaps = false,
   fontColor = "",
+  backgroundColor = "transparent",
 }: IMyLabel) => {
   const typeClass = type ? `text-${type}` : "";
   return (
-    <span style={{ color: fontColor }} className={`label ${size} ${typeClass}`}>
+    <span
+      style={{ color: fontColor, backgroundColor }}
+      className={`label ${size} ${typeClass}`}
+    >
       {allCaps ? text.toUpperCase() : text}
     </span>
   );

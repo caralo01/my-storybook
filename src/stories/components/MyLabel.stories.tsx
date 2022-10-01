@@ -48,3 +48,12 @@ CustomFontColor.args = {
   type: "tertiary",
   fontColor: "#5517ac",
 };
+
+export const CustomBackgroundColor = Template.bind({});
+
+CustomBackgroundColor.args = {
+  text: "Hola mundo!",
+  type: "tertiary",
+  fontColor: "#fff",
+  backgroundColor: "#000",
+};

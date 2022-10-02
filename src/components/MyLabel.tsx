@@ -1,7 +1,7 @@
 import "./myLabel.css";
 import { AllCaps } from "../stories/components/MyLabel.stories";
 
-interface IMyLabel {
+export interface IMyLabel {
   /**
    * Este es el mensaje a mostrar en la etiqueta
    */
